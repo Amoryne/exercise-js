@@ -2,10 +2,31 @@
 
 
 (() => {
+    //creer class animal
     class Animal {
-        sayHello() {
-            return `${this.constructor.greeting}! I'm ${this.name}!`;
+        //name
+        constructor(name){
+            this.name = name;
         }
+        //methode hello, appel methode static plus le nom
+        sayHello(){
+            return (this.constructor.greeting + "I'm"+this.name); 
+        }
+    }  //methode static sur la façon de dire bonjour pour chaque animal
+    class Dog extends Animal{
+        static greeting = 'Wouaf';
     }
-    // your code here
+    class Cat extends Animal{
+        static greeting = "miaou";
+    }
+    run.addEventListener('click', function(){
+//creer nouvel animal
+        let maki = new Dog ( "Maki");
+        console.log(maki.sayHello());
+        let filoute = new Cat("Filoute");
+        console.log(filoute.sayHello());
+    })
+
+
+
 })();

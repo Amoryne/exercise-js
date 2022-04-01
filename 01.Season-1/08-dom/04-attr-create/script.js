@@ -3,6 +3,17 @@
 
 (() => {
 
-    // your code here
+  
+     let span = document.querySelector("#source")
 
+    let data_image = span.getAttribute("data-image")
+
+    let target = document.querySelector("#target")
+
+    let image = document.createElement("img")
+
+    image.setAttribute("src",data_image)
+
+    target.append(image)
+ 
 })();

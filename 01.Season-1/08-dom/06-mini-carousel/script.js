@@ -11,6 +11,19 @@
         "../../_shared/img/map.svg",
     ];
 
-    // your code here
+ next.addEventListener('click', function (){  
+let i=0;
+ 
+  function changepic()
+   {
+
+      if (i>=gallery.length-1){
+         i=0;
+      }
+      i=i+1;
+     document.gallery.src=gallery[1];
+   }
+
+});
 
 })();

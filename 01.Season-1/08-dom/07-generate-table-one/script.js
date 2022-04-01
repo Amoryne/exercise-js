@@ -3,6 +3,13 @@
 
 (() => {
 
-    // your code here
+    let target = document.getElementById('target')
 
+let table = document.createElement('table');
+let thead = document.createElement('thead');
+let tbody=document.createElement('tbody');
+
+table.appendChild(thead);
+table.appendChild(tbody);
+target.appendChild(table);
 })();

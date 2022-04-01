@@ -2,7 +2,10 @@
 
 
 (() => {
+let texte=document.getElementById("target");
+texte.style.fontSize = "x-small"
+console.log(texte);
 
-    // your code here
+// texte.fontSize = "xx-small";
 
 })();
